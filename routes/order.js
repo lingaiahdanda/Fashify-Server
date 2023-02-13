@@ -1,9 +1,9 @@
-const Cart = require('../models/Cart');
+const Order = require('../models/Order');
 const {verifyToken,verifyTokenAndAuthorization, verifyTokenAndAdmin} = require('./verifyToken');
 
 const router = require('express').Router();
 
-// Create Cart
+// Create Order
 router.post('/',verifyTokenAndAuthorization ,async(req,res)=>{
     const newCart = new Cart(req.body);
     try{
