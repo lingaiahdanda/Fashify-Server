@@ -3,7 +3,7 @@ const app = express()
 const dotenv = require("dotenv");
 const connectDB = require('./config/db');
 const userRoute = require('./routes/user');
-
+const authRoute = require('./routes/auth');
 dotenv.config();
 
 // connect DB
@@ -11,6 +11,7 @@ connectDB();
 
 app.use(express.json());
 //route
+app.use('/api/auth', authRoute);
 app.use('/api/users', userRoute);
 
 app.listen(process.env.PORT || 5000, ()=>{
