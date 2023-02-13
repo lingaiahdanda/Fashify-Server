@@ -64,7 +64,7 @@ router.put('/:id',verifyTokenAndAdmin, async(req,res)=>{
 router.delete('/:id',verifyTokenAndAdmin, async(req,res)=>{
     try{
         const deletedProduct = await Product.findByIdAndRemove(req.params.id);
-        res.status(200).json({"msg": "Product has been deleted",deletedProduct})
+        res.status(200).json({"msg": "Product hass been deleted",deletedProduct})
     }catch(err){
         res.status(500).json(err);
     }
