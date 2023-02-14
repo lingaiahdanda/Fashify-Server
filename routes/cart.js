@@ -4,7 +4,7 @@ const {verifyToken,verifyTokenAndAuthorization, verifyTokenAndAdmin} = require('
 const router = require('express').Router();
 
 // Create Cart
-router.post('/',verifyTokenAndAuthorization ,async(req,res)=>{
+router.post('/',verifyToken ,async(req,res)=>{
     const newCart = new Cart(req.body);
     try{
         const savedCart = await newCart.save();
