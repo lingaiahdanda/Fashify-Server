@@ -1,4 +1,4 @@
-## This is a Fashify API for handling the routes for CRUD operations on 
+# This is a Fashify API for handling the routes for CRUD operations on 
 1. Users
 2. Products
 3. Cart
