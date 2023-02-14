@@ -3,6 +3,8 @@
 2. Products
 3. Cart
 4. Orders
+5. stripe checkoy
+6. authentication
 
 ## The routes are JWT authorized
 
