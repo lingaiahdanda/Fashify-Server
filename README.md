@@ -16,7 +16,7 @@
 # install dependencies
     npm install
 #  add .env file. It should have following variables
-    PORT : where the api runsJS
+    PORT : where the api runs
     MONGODB_URL: mongo db connection url
     JWT_SECRET: secret token to sign 
     PWD_SECRET: to encrypt the password, I have used Crypto
